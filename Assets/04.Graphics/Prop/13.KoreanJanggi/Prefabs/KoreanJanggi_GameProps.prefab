@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6126805045304697865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1378472733159762105}
+  m_Layer: 0
+  m_Name: KoreanJanggi_GameProps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1378472733159762105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126805045304697865}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6257780456562669865}
+  - {fileID: 7424545654922342628}
+  - {fileID: 308591415646997697}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6569876691515987466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6257780456562669865}
+  m_Layer: 0
+  m_Name: Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6257780456562669865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569876691515987466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3686871800121755000}
+  m_Father: {fileID: 1378472733159762105}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &211892383122240330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1378472733159762105}
+    m_Modifications:
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2296800301454105529, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970944181079709024, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_Name
+      value: KoreanJanggi_SingleProps (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639728398283144631, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+--- !u!4 &308591415646997697 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+  m_PrefabInstance: {fileID: 211892383122240330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2152969200382307888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6257780456562669865}
+    m_Modifications:
+    - target: {fileID: 432829229458414407, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432829229458414407, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278930677551849533, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+      propertyPath: m_Name
+      value: KoreanJanggi_Board
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+--- !u!4 &3686871800121755000 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3371652728623033160, guid: 308603641e4b6e2419721ede75927a4d, type: 3}
+  m_PrefabInstance: {fileID: 2152969200382307888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7039641139876695919
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1378472733159762105}
+    m_Modifications:
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970944181079709024, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+      propertyPath: m_Name
+      value: KoreanJanggi_SingleProps
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+--- !u!4 &7424545654922342628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 484309300282621835, guid: 55dd927b78324194bb859edd2c10958f, type: 3}
+  m_PrefabInstance: {fileID: 7039641139876695919}
+  m_PrefabAsset: {fileID: 0}
