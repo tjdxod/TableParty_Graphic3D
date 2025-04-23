@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7217606120693359615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4770748970893101147}
+  m_Layer: 0
+  m_Name: DinerRoom_Table
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &4770748970893101147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7217606120693359615}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6866588312667078812}
+  - {fileID: 1644269335445160739}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1250636489318704328
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4770748970893101147}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.70597523
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_Name
+      value: DinerRoom_TableTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2839037353500983042}
+  m_SourcePrefab: {fileID: 100100000, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+--- !u!4 &1644269335445160739 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+  m_PrefabInstance: {fileID: 1250636489318704328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2133103767534868889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+  m_PrefabInstance: {fileID: 1250636489318704328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2839037353500983042
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133103767534868889}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1568976156706157043, guid: 183ef0449be4c1f4a983fa239cab58ba, type: 3}
+--- !u!1001 &6395600538622470007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4770748970893101147}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33816704
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_Name
+      value: DinerRoom_TableLeg
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9172244088968595041}
+  m_SourcePrefab: {fileID: 100100000, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+--- !u!1 &6053072215722596902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+  m_PrefabInstance: {fileID: 6395600538622470007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &9172244088968595041
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6053072215722596902}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8970158983556982944, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+--- !u!4 &6866588312667078812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9b0e28261973d9943aca42a46f6662c0, type: 3}
+  m_PrefabInstance: {fileID: 6395600538622470007}
+  m_PrefabAsset: {fileID: 0}
