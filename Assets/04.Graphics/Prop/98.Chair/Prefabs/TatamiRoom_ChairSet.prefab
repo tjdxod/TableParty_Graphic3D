@@ -1,0 +1,376 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5072840068769993065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6226800100756264523}
+  m_Layer: 0
+  m_Name: TatamiRoom_ChairSet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6226800100756264523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072840068769993065}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8352088827677998271}
+  - {fileID: 297787343357403852}
+  - {fileID: 5471410826683407696}
+  - {fileID: 6684331943454492820}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &72220586453879772
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6226800100756264523}
+    m_Modifications:
+    - target: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_Name
+      value: TatamiRoom_Chair (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2173132112524964700}
+  m_SourcePrefab: {fileID: 100100000, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+--- !u!1 &4658282792428275690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+  m_PrefabInstance: {fileID: 72220586453879772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2173132112524964700
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4658282792428275690}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.4102656, y: 0.5002271, z: 0.4102656}
+  m_Center: {x: 0, y: 0.24988645, z: 0}
+--- !u!4 &5471410826683407696 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+  m_PrefabInstance: {fileID: 72220586453879772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1598016357463219736
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6226800100756264523}
+    m_Modifications:
+    - target: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_Name
+      value: TatamiRoom_Chair (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9082359300694598653}
+  m_SourcePrefab: {fileID: 100100000, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+--- !u!1 &6307384531818549806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+  m_PrefabInstance: {fileID: 1598016357463219736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &9082359300694598653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6307384531818549806}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.41026568, y: 0.5002271, z: 0.41026568}
+  m_Center: {x: 0, y: 0.24988645, z: 0}
+--- !u!4 &6684331943454492820 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+  m_PrefabInstance: {fileID: 1598016357463219736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4109072436735797811
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6226800100756264523}
+    m_Modifications:
+    - target: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_Name
+      value: TatamiRoom_Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6531877288972316131, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+--- !u!4 &8352088827677998271 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+  m_PrefabInstance: {fileID: 4109072436735797811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5678822625289303104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6226800100756264523}
+    m_Modifications:
+    - target: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_Name
+      value: TatamiRoom_Chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5835192516662843037}
+  m_SourcePrefab: {fileID: 100100000, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+--- !u!4 &297787343357403852 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5399480696018114188, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+  m_PrefabInstance: {fileID: 5678822625289303104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1110740589082359926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4730221864176929846, guid: 2e735b3e305cde74c9742bdc0f96c255, type: 3}
+  m_PrefabInstance: {fileID: 5678822625289303104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5835192516662843037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110740589082359926}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.41026568, y: 0.5002271, z: 0.41026568}
+  m_Center: {x: 0, y: 0.24988645, z: 0}
