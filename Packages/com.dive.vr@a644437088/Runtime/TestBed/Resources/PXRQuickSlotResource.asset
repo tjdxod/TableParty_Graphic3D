@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79503061b5393ed4db69dc6962798ba0, type: 3}
+  m_Name: PXRQuickSlotResource
+  m_EditorClassIdentifier: 
+  quickSlotInfos:
+  - itemKey: Quick_Close
+    slotName: Close
+    sprite: {fileID: 21300000, guid: bfe6161d9279c1e47b3771c1ab018470, type: 3}
+    description: Close QuickSlot
+    slotType: 3
+  - itemKey: Quick_Reddit
+    slotName: Reddit
+    sprite: {fileID: 21300000, guid: bd5800a4eb1b3994cbf678c8eae0464a, type: 3}
+    description: Reddit Icon!
+    slotType: 2
+  - itemKey: Quick_Git
+    slotName: Git
+    sprite: {fileID: 21300000, guid: 382fa5a2011bcd141a17f4f5a20ca5cc, type: 3}
+    description: Git Icon!
+    slotType: 2
+  - itemKey: Quick_Discord
+    slotName: Discord
+    sprite: {fileID: 21300000, guid: b6b68c8c37d5cf1419267a80c426ac83, type: 3}
+    description: Discord Icon!
+    slotType: 2
+  - itemKey: Quick_Steam
+    slotName: Steam
+    sprite: {fileID: 21300000, guid: 6107e3c2933aabe43ba7cd44efb0764d, type: 3}
+    description: Steam Icon!
+    slotType: 2
+  - itemKey: Quick_Twitter
+    slotName: Twitter
+    sprite: {fileID: 21300000, guid: 1b35732bebfbd224abab7e97ebeb6d35, type: 3}
+    description: Twitter Icon!
+    slotType: 2

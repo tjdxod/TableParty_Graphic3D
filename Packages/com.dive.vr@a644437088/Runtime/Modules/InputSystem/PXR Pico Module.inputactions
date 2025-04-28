@@ -1,0 +1,2253 @@
+{
+    "name": "PXR Pico Module",
+    "maps": [
+        {
+            "name": "PXR HMD",
+            "id": "73d4e097-87b2-4237-b35c-b4f5fd87855d",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "aab9cf24-d3f9-426f-a98f-f103323c1587",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "415200b4-9b72-49b4-b2ea-00c0b4e75467",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "IsTracked",
+                    "type": "Value",
+                    "id": "46bb6fe6-9e1e-4322-bacc-74e807f66384",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b3b19831-24c2-4b5e-810f-b1ede2391032",
+                    "path": "<XRHMD>/centerEyePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f90d80f9-379e-4c30-aebb-e1811a633a46",
+                    "path": "<XRHMD>/centerEyeRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - Vive Index;PXR Module - HTC Vive;PXR Module - Mixed Reality",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf87fc16-2931-44ce-b55d-b562ee7de75d",
+                    "path": "<XRHMD>/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality",
+                    "action": "IsTracked",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PXR LeftHand",
+            "id": "ea6067e4-9721-474f-bd85-ea5be00079a6",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "8456cbe9-3930-44e0-99f0-ef67d6639c17",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "8a11f829-653e-4fa1-821e-684674246b18",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "InputTrackingState",
+                    "type": "Value",
+                    "id": "bd5b3ef0-6dd7-430d-9bf3-0d078d47d78e",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Trigger",
+                    "type": "Value",
+                    "id": "c77a56d5-8829-4b69-a440-2920d85b5790",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Trigger Touch",
+                    "type": "Button",
+                    "id": "958a8810-0980-4905-bb22-d417adbcb4e7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Grip",
+                    "type": "Value",
+                    "id": "090ea08a-05ed-459a-8456-ac2bf21a3ff1",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "a464890f-6b8d-47d5-b80e-fe90585e964a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Primary Button",
+                    "type": "Button",
+                    "id": "24274a3b-7578-425b-9eb7-75fec726c6a2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Primary Touch",
+                    "type": "Value",
+                    "id": "0dbee2ea-b0c2-4820-a7a0-1e9fb801d7a1",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary Button",
+                    "type": "Button",
+                    "id": "f22d90f7-0267-43bb-b7ae-ccb5cdc81b71",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Secondary Touch",
+                    "type": "Button",
+                    "id": "13e1e3bb-c823-4c3f-9067-06c28b0aba78",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Primary2D Axis",
+                    "type": "Value",
+                    "id": "729b4f82-176d-4a4e-a458-04b29e190bc8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Primary2D Axis Click",
+                    "type": "Button",
+                    "id": "b435b363-a2de-4755-b97f-0d83d36fec87",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Primary2D Axis Touch",
+                    "type": "Button",
+                    "id": "c859a36c-8fe5-4980-a116-5a6b26fca501",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Secondary2D Axis",
+                    "type": "Value",
+                    "id": "50f77d1f-98f8-4407-94a1-332af8a8fb5f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary2D Axis Click",
+                    "type": "Button",
+                    "id": "ac1d630e-5a1f-4f38-ae89-c2a6bedc7c57",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Secondary2D Touch Force",
+                    "type": "Value",
+                    "id": "2d6c6776-5aec-4709-aef1-f35931018ae8",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary2D Axis Touch",
+                    "type": "Button",
+                    "id": "e4ec397c-2402-46a3-ab3e-1e1716912119",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ccd76333-bc8a-4469-9125-681dc4eba058",
+                    "path": "<OculusTouchController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aeb3f86a-8498-4b88-8659-ffd91fa77bd4",
+                    "path": "<PXR_Controller>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4562bfaa-6944-4aa0-a67a-d6ef73dd960f",
+                    "path": "<ViveController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c488000d-4c13-466b-bb1e-d10511068541",
+                    "path": "<ValveIndexController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "633e5353-73d9-4653-9b8e-cf50bb4f1acb",
+                    "path": "<WMRSpatialController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3939758-05e1-4737-b874-1137efe38d05",
+                    "path": "<XRController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "455cf47c-362c-4ee6-bb24-1f1a08004886",
+                    "path": "<OculusTouchController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46ef6aee-f9e6-422e-bc38-8cbd27ab5b33",
+                    "path": "<ValveIndexController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "370ae0f6-d247-48a3-9aff-77cff31bda67",
+                    "path": "<PXR_Controller>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40734906-9d24-48d8-9db1-d0f5bac9e389",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4699f70-f760-463d-89bf-fc5cf869ef5e",
+                    "path": "<OculusTouchController>{LeftHand}/primaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7c5b0401-0d76-4559-ad06-aafda539b653",
+                    "path": "<ValveIndexController>{LeftHand}/primaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4fdf525c-39c5-4c06-a6c1-9680a81e72eb",
+                    "path": "<PXR_Controller>{LeftHand}/primaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bfbf76ab-5849-4be1-a971-d1bf6d95efbc",
+                    "path": "<XRController>{LeftHand}/primaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "22a31563-ff5d-437b-84fe-576bfeefdf35",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aee7ba0c-1c36-48d2-9c90-b52e0faf234d",
+                    "path": "<PXR_Controller>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dcf66a83-5a04-4171-a88a-038b5c16ce2b",
+                    "path": "<ViveController>{LeftHand}/trackpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bac781b6-a352-4f13-92ec-3c75ee78e096",
+                    "path": "<ValveIndexController>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8028aafd-c23c-4b50-add2-06a34393459d",
+                    "path": "<WMRSpatialController>{LeftHand}/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fb530c99-8e33-4a9c-a919-94ea289e94cd",
+                    "path": "<XRController>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4e78532-fc27-4d6b-b245-3fc6d5eddb18",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "562f3d7e-691f-4ae2-b5f2-d030b6fa1767",
+                    "path": "<PXR_Controller>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf97b887-dac8-4ee3-9bee-e79c922c8dc1",
+                    "path": "<ViveController>{LeftHand}/trackpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0fe8657-bfcb-43fe-ba09-15381f25c635",
+                    "path": "<ValveIndexController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "08451fdd-fe7e-444b-8718-48c1a057d9aa",
+                    "path": "<WMRSpatialController>{LeftHand}/touchpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "77fdab31-47dc-4ec6-8711-05fcaced93f0",
+                    "path": "<XRController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c02768ae-d066-4bdf-95ba-de5ae4a1de27",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "add0cf7b-3e49-40c0-ac60-b63eb296987e",
+                    "path": "<PXR_Controller>{LeftHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "53ee279c-0df6-463e-9372-c7bceae27554",
+                    "path": "<ViveController>{LeftHand}/trackpadTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "43a496f5-b02e-4f7c-aa38-6bd8847e241c",
+                    "path": "<ValveIndexController>{LeftHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a385ae5-781e-4625-a6e0-df9b01f5deb4",
+                    "path": "<WMRSpatialController>{LeftHand}/touchpadTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5486b62f-dd93-436e-afb4-bb778aa75f1f",
+                    "path": "<XRController>{LeftHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb9a6883-3213-4c2c-a523-a8405e475b95",
+                    "path": "<WMRSpatialController>{LeftHand}/joystickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Secondary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5adbddef-e0c2-423c-8ace-34bd5d2214f1",
+                    "path": "<ValveIndexController>{LeftHand}/trackpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ab066d15-63c5-4d55-aee4-809d54cc8377",
+                    "path": "<WMRSpatialController>{LeftHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Secondary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1c9f1b48-8b84-4d6c-a9bb-1904845fa11b",
+                    "path": "<ValveIndexController>{LeftHand}/trackpadTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e0ec2506-ec60-4f60-8a0c-1b68b515b396",
+                    "path": "<OculusTouchController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2afaaa31-5cd0-49f3-a9e1-79736dd83388",
+                    "path": "<PXR_Controller>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13711a06-fe37-4df6-82bb-520038f2faa9",
+                    "path": "<ViveController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c96dae90-a754-4790-8046-5ff021dd921e",
+                    "path": "<ValveIndexController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f6f3d31b-ff9c-49c7-8303-0d115d90ec53",
+                    "path": "<WMRSpatialController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "94032484-5b50-4f78-9557-f132348b26fa",
+                    "path": "<XRController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "abcc5763-c4ef-46b2-84aa-15ae9fcd47a7",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f35e441-3fed-4daa-8b6c-9fdc3fc2134f",
+                    "path": "<ValveIndexController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46cbe0ab-3c7b-4f9f-90be-98deae2945a4",
+                    "path": "<PXR_Controller>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "624f9593-d286-4ca8-9287-0587eaa3917a",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "11fcf024-199f-4f09-9715-c81c119b4406",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Secondary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9bd7d1c-fec1-47d3-af5c-6dc9eb0655c5",
+                    "path": "<ValveIndexController>{LeftHand}/secondaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f69f099f-0b03-41ab-a340-ca81b767de3d",
+                    "path": "<PXR_Controller>{LeftHand}/secondaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Secondary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "12e99aa2-30ff-4d0a-8b65-2ff68103e344",
+                    "path": "<XRController>{LeftHand}/secondaryTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Secondary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d9f5127-5d92-47ce-95fd-c7604b7e843c",
+                    "path": "<ValveIndexController>{LeftHand}/trackpadForce",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary2D Touch Force",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c30f9e6-e566-419c-8372-d56228c9b927",
+                    "path": "<OculusTouchController>{LeftHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3c1fc0bc-9b13-468c-9848-d50c9643bfad",
+                    "path": "<PXR_Controller>{LeftHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a739229c-b5f6-47f4-926a-13009f8bfa01",
+                    "path": "<ValveIndexController>{LeftHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3896bd04-3e15-4796-9a7a-31a97dbf8b96",
+                    "path": "<XRController>{LeftHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9fb514dd-9e47-40f7-8b14-9ec05aea5d14",
+                    "path": "<XRController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality;PXR Module - Oculus Touch",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "328063a6-4271-41d0-acb8-5fe39eeddee3",
+                    "path": "<XRController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Mixed Reality;PXR Module - Vive Index",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "146f219c-30d0-4584-a96f-cfa8e9a9820d",
+                    "path": "<XRController>{LeftHand}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality",
+                    "action": "InputTrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "150b84da-9303-4822-bb8e-1bc9d2b87352",
+                    "path": "<OculusTouchController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cdbba30e-380d-4bc2-9620-61cd69601383",
+                    "path": "<ViveController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e8312f29-9ed1-4e3a-994a-f10898346287",
+                    "path": "<ValveIndexController>{LeftHand}/system",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0c82105-6ac8-4ef9-a8e7-c0de19a7a59e",
+                    "path": "<WMRSpatialController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "936599cd-a078-46e7-a9c7-bd8950495516",
+                    "path": "<XRController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "acfdc4ff-4c5b-4abf-b8f0-3de6f0512153",
+                    "path": "<PXR_Controller>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e855d128-47e1-4ff8-a09a-eb2727d70ff1",
+                    "path": "<XRSimulatedController>{LeftHand}/menuButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PXR RightHand",
+            "id": "19e2b067-a79e-4cfa-b070-8d6507fb1868",
+            "actions": [
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "0fd1c2bc-1c16-45c2-a07a-ea565ce59dc7",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotation",
+                    "type": "Value",
+                    "id": "ec68f70d-6be5-4af2-9e8f-af6e799d11c7",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "InputTrackingState",
+                    "type": "Value",
+                    "id": "85cbeaf5-b96a-409c-a60f-f17be8dc5587",
+                    "expectedControlType": "Integer",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Trigger",
+                    "type": "Value",
+                    "id": "3119c6b4-268b-4b05-9daa-55450816a868",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Trigger Touch",
+                    "type": "Value",
+                    "id": "cdd565b5-42e7-4f09-a25c-b3e4596c061a",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Grip",
+                    "type": "Value",
+                    "id": "64095f61-c4be-45a7-a787-7f6ef6906d5b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Menu",
+                    "type": "Value",
+                    "id": "1477cf39-36ab-43a1-883d-696d4cd97b61",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Primary Button",
+                    "type": "Value",
+                    "id": "a6349c95-4a57-420c-b033-c164d31c6672",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Primary Touch",
+                    "type": "Value",
+                    "id": "90825770-46cb-43ea-8196-c958069b6ec5",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary Button",
+                    "type": "Value",
+                    "id": "e7795ae3-0674-4c46-b033-3efc53f6972e",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary Touch",
+                    "type": "Value",
+                    "id": "9dd73277-fc97-476f-b5ac-84f034136dd6",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Primary2D Axis",
+                    "type": "Value",
+                    "id": "612736db-7e29-4972-9a46-97a7486f7f11",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Primary2D Axis Click",
+                    "type": "Value",
+                    "id": "6cb7ed07-0c3c-400f-b71f-83c3703c78a4",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Primary2D Axis Touch",
+                    "type": "Value",
+                    "id": "2813c600-2c58-4062-9db1-75875ec09efd",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary2D Axis",
+                    "type": "Value",
+                    "id": "d6645ed6-c62b-4119-8b9b-96cf8f21094f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary2D Axis Click",
+                    "type": "Value",
+                    "id": "2463c41c-e165-4172-9d5a-cfb1580beb74",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary2D Touch Force",
+                    "type": "Value",
+                    "id": "433967c9-38c7-483d-9615-8444155f19de",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Secondary2D Axis Touch",
+                    "type": "Value",
+                    "id": "7e27a018-167e-42b4-bc89-f1115473a8c0",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "317b8d1e-5541-482d-9365-2ae808673c19",
+                    "path": "<OculusTouchController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7b78897-2c11-4bfd-b47f-4a42bbb3322d",
+                    "path": "<PXR_Controller>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "745f9306-b87d-4f15-973f-657a3755a518",
+                    "path": "<ViveController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b5b39d8-0b79-4c2f-9c89-21bec7b9d9a6",
+                    "path": "<ValveIndexController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a37a70cc-2efa-40de-a724-03a7eff6547a",
+                    "path": "<WMRSpatialController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d89caa54-6163-4766-80e4-3da9c33b0344",
+                    "path": "<XRController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3bd1344-7638-4e0c-8f3c-3bbc7827b107",
+                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e6fcc382-07c2-48b8-81de-bfc3aeb8804a",
+                    "path": "<PXR_Controller>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "434c025e-155b-49da-9d79-3d2c87f8084e",
+                    "path": "<ValveIndexController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f0a782b-41d5-4fd6-9f65-37729f5b63b6",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "25a7b950-159d-4608-9dc5-38d6aab31a72",
+                    "path": "<OculusTouchController>{RightHand}/primaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3866ac0d-ae40-4949-8894-e7f143cd253a",
+                    "path": "<PXR_Controller>{RightHand}/primaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df2ce598-3ba1-4a34-a9c7-05d20d971905",
+                    "path": "<ValveIndexController>{RightHand}/primaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7852295e-91aa-4d01-855e-49eed3227c4c",
+                    "path": "<XRController>{RightHand}/primaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1a128fcb-1d6c-4b04-b6e9-edfb27267ba6",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0517c882-2660-411c-853b-6fcec71698b0",
+                    "path": "<PXR_Controller>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e1155a0-d92f-4777-b9b8-dcbfaee314da",
+                    "path": "<ViveController>{RightHand}/trackpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0ec864a3-6635-427d-8be6-bd324f723e47",
+                    "path": "<ValveIndexController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "30d1c482-9b4d-46c0-b66e-fbe0e6cbd689",
+                    "path": "<WMRSpatialController>{RightHand}/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "331da5e9-6a10-4f6f-9ef2-fb806155b194",
+                    "path": "<XRController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d710d38-14b8-4ac0-af83-a89ff084b26d",
+                    "path": "<OculusTouchController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1fe57584-738c-4eee-8483-4e45139ce4b0",
+                    "path": "<PXR_Controller>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "417254dd-bdde-45ef-b4e4-054bfabfafb1",
+                    "path": "<ViveController>{RightHand}/trackpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a8de83eb-e935-4f8f-bb95-382113351248",
+                    "path": "<ValveIndexController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7470e388-e7de-45d9-b489-8ee9723d2003",
+                    "path": "<WMRSpatialController>{RightHand}/touchpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "579bea97-a07c-450e-a56c-3c63482e37e8",
+                    "path": "<XRController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3cd7b92c-40f9-46fa-80f4-be7417af90c6",
+                    "path": "<OculusTouchController>{RightHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7fa65824-092c-4e68-88a0-843c97816565",
+                    "path": "<PXR_Controller>{RightHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a295b552-1dcf-4499-8551-13560ee56e50",
+                    "path": "<ViveController>{RightHand}/trackpadTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d2972e9c-5428-492b-a2ca-ebf16ff910d1",
+                    "path": "<ValveIndexController>{RightHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a202bb65-a5b3-44d8-8558-a3c9cf4181f0",
+                    "path": "<WMRSpatialController>{RightHand}/touchpadTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "94817426-95d5-4f47-8f84-07b1121d0caa",
+                    "path": "<XRController>{RightHand}/thumbstickTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b659763-f127-4c50-b7b5-af58a4534f2d",
+                    "path": "<WMRSpatialController>{RightHand}/joystickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Secondary2D Axis Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "116fad9f-a9e1-4be9-9a57-052a4eafe111",
+                    "path": "<ValveIndexController>{RightHand}/trackpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9afe424c-66c8-4a7b-9f3d-7916fda078d9",
+                    "path": "<WMRSpatialController>{RightHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Secondary2D Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7b830258-34ba-4e51-9ad7-947b7ec9a6ee",
+                    "path": "<ValveIndexController>{RightHand}/trackpadTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary2D Axis Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a344fb35-df6d-4f37-956f-e8043935224c",
+                    "path": "<OculusTouchController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "87b31bd0-395c-4033-a469-c786f8bd3c69",
+                    "path": "<PXR_Controller>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fba1bc46-cb84-443a-a777-d8f0c96a701b",
+                    "path": "<ViveController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - HTC Vive",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "398e746b-2973-408a-9f05-6c250710a225",
+                    "path": "<ValveIndexController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e274542-c51e-4b1b-b4e0-023043b42876",
+                    "path": "<WMRSpatialController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Mixed Reality",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "162cd434-5e30-4223-b641-b791558a0780",
+                    "path": "<XRController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "264dc070-c929-4a6e-8583-c1da35c1f403",
+                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6475c48-9768-4cb1-a043-55dcc1627225",
+                    "path": "<PXR_Controller>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05fcb112-3f1a-4092-8b93-22b9a9994a4d",
+                    "path": "<ValveIndexController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0c05177d-383e-494b-9005-df340eabdcf0",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8392d57c-e558-4b7b-a29b-82fc4902cbdd",
+                    "path": "<OculusTouchController>{RightHand}/secondaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Secondary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b0e3cd6-fd99-430b-bbce-e2c4b0b8231d",
+                    "path": "<PXR_Controller>{RightHand}/secondaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Secondary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ba59f6a6-a740-46a7-972b-98469265a58a",
+                    "path": "<ValveIndexController>{RightHand}/secondaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1312f484-4ea0-4e26-af1c-5863ce09d3a1",
+                    "path": "<XRController>{RightHand}/secondaryTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Secondary Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21cdf1f3-6cfa-487c-b86f-decf396b6fa4",
+                    "path": "<ValveIndexController>{RightHand}/trackpadForce",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Secondary2D Touch Force",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db584197-90bb-451b-81ba-46434fd98de9",
+                    "path": "<OculusTouchController>{RightHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch",
+                    "action": "Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "effebc84-5b27-4a0d-b7dd-9437def4f1a7",
+                    "path": "<PXR_Controller>{RightHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Pico",
+                    "action": "Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "442009bf-2cab-4452-85ba-f15e4af59ea6",
+                    "path": "<ValveIndexController>{RightHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Vive Index",
+                    "action": "Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "034ff724-14cd-4de1-9c88-707fda398969",
+                    "path": "<XRController>{RightHand}/triggerTouched",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger Touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5a91171e-41f5-4055-a6c4-f0f7f2aa886a",
+                    "path": "<XRController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70d13cd2-f79b-445a-a05d-e1e6f42ec90b",
+                    "path": "<XRController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Mixed Reality;PXR Module - Vive Index",
+                    "action": "Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a4c2087a-cb06-49b3-9702-36ea70602654",
+                    "path": "<XRController>{RightHand}/trackingState",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality",
+                    "action": "InputTrackingState",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PXR UI",
+            "id": "c2a0db2a-5041-41ec-adb3-f61990183209",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "050943c6-133d-4d5f-a101-5f54d1bffff4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PointerPosition",
+                    "type": "PassThrough",
+                    "id": "222bd110-0a34-4072-9ca3-2dff0663512f",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PointerRotation",
+                    "type": "PassThrough",
+                    "id": "c2e72e96-4dd3-4ab7-ab92-d14c81e75f00",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d4cbd162-69ea-412e-92a2-ac3d1ce369d7",
+                    "path": "<XRController>/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4272a940-c06e-4f55-acc2-51756187a337",
+                    "path": "<XRController>/pointerPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality",
+                    "action": "PointerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ebecfed8-f71d-4887-aeac-53634115c8a0",
+                    "path": "<XRController>/pointerRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - Oculus Touch;PXR Module - HTC Vive;PXR Module - Vive Index;PXR Module - Mixed Reality",
+                    "action": "PointerRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PXR PC",
+            "id": "34b4c868-6340-4b43-b15b-e1f17db41c53",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "c427c11a-aac7-4fda-97f6-7c96d7d465e3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftSecondary",
+                    "type": "Button",
+                    "id": "115f87f1-0003-4206-894e-c8d72703dd54",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightSecondary",
+                    "type": "Button",
+                    "id": "0137b8aa-5b40-41df-99d0-aa1c984909a5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftPrimary",
+                    "type": "Button",
+                    "id": "d5dfa9b5-4649-455b-a09d-f3ad7fdeacd8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightPrimary",
+                    "type": "Button",
+                    "id": "f598f72d-8bcf-4bd9-b04a-ec3b05b07d5c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GrabRotate",
+                    "type": "Value",
+                    "id": "35f82100-1981-488a-868c-9b912d3bb89c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "c7d3b307-1f8b-4718-b34b-661b8dfdc947",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightHandMove",
+                    "type": "Value",
+                    "id": "48803e78-8a03-4967-a842-cb4db66d1ed2",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Record",
+                    "type": "Button",
+                    "id": "02d63487-dcd6-4f5a-b50f-c1ad70eba05c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MouseDelta",
+                    "type": "Value",
+                    "id": "1bbab744-787f-4a30-b058-bc6229070553",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f2ad05c6-f2e5-44f7-95cc-296bf89d5850",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "LeftSecondary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13fab080-7f31-48a3-8fcc-c79e7d11dab0",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "RightSecondary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cdcebc73-f9df-4fd7-953e-286733b561b3",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "LeftPrimary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eeea6a4b-fd7d-4aea-a22c-71c00cf46f4a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "RightPrimary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "445dc6e8-5f76-49fe-8e5d-b95dc20d28b2",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrabRotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Left",
+                    "id": "3cea8253-c69b-452b-93f6-d126b2cf7c82",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "GrabRotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "737ac0e9-ce21-4522-a0bf-b7a765cab34e",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "GrabRotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "7820a9b0-a0b3-49a0-a7e6-7c355418c000",
+                    "path": "<Keyboard>/backquote",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b21ab8d-1df3-4560-beb6-f2672270a42f",
+                    "path": "<Keyboard>/backslash",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "Record",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45f30ac6-8e89-4508-a5a8-874c6b0e2cbd",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "MouseDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "b4122182-df89-411b-b3cd-e1a9b38b04a8",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHandMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "af21f5e3-2a0b-4cbb-bc72-f6bdc5ffaa80",
+                    "path": "<Keyboard>/numpad1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "RightHandMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "c2c6a922-7ac1-476e-85c9-a59adf919d7e",
+                    "path": "<Keyboard>/numpad3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "RightHandMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "WASD",
+                    "id": "f230835d-2990-4c2a-8bf2-fe497df5f746",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Up",
+                    "id": "8f8d09af-4f16-45b8-820f-605874c11b44",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Down",
+                    "id": "6fcb13fa-8156-4fb8-b6e2-70cb9f81b203",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Left",
+                    "id": "506d20fa-0902-4e7b-90d7-7945e0799a15",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Right",
+                    "id": "32a313d0-9c31-4815-9fb1-79188bf56b6c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PXR Module - PC",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "PXR Module - Oculus Touch",
+            "bindingGroup": "PXR Module - Oculus Touch",
+            "devices": [
+                {
+                    "devicePath": "<OculusTouchController>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<OculusTouchController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<OculusTouchController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "PXR Module - HTC Vive",
+            "bindingGroup": "PXR Module - HTC Vive",
+            "devices": [
+                {
+                    "devicePath": "<ViveController>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<ViveController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<ViveController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "PXR Module - Vive Index",
+            "bindingGroup": "PXR Module - Vive Index",
+            "devices": [
+                {
+                    "devicePath": "<ValveIndexController>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<ValveIndexController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<ValveIndexController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "PXR Module - Mixed Reality",
+            "bindingGroup": "PXR Module - Mixed Reality",
+            "devices": [
+                {
+                    "devicePath": "<WMRSpatialController>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<WMRSpatialController>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<WMRSpatialController>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "PXR Module - PC",
+            "bindingGroup": "PXR Module - PC",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "PXR Module - Pico",
+            "bindingGroup": "PXR Module - Pico",
+            "devices": [
+                {
+                    "devicePath": "<PXR_Controller>{LeftHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<PXR_Controller>{RightHand}",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<PXR_Controller>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
