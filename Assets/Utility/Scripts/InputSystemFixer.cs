@@ -5,17 +5,43 @@ using UnityEngine.XR.Management;
 
 public class InputSystemFixer : MonoBehaviour
 {
-    public void Awake()
-    {
-        // Fix: Stop subsystems and deinitialize the loader if it's already active
-        if (XRGeneralSettings.Instance.Manager.activeLoader != null)
-        {
-            XRGeneralSettings.Instance.Manager.StopSubsystems();
-            XRGeneralSettings.Instance.Manager.DeinitializeLoader();
+#if UNITY_EDITOR
+
+    private void Start() {
+        EnableXR();
+    }
+
+    private void OnDestroy() {
+        DisableXR();
+    }
+
+    public void EnableXR() {
+        StartCoroutine(StartXRCoroutine());
+    }
+
+    public void DisableXR() {
+        XRGeneralSettings.Instance?.Manager?.StopSubsystems();
+        XRGeneralSettings.Instance?.Manager?.DeinitializeLoader();
+    }
+ 
+    public IEnumerator StartXRCoroutine() { 
+        if(XRGeneralSettings.Instance == null){
+            XRGeneralSettings.Instance = XRGeneralSettings.CreateInstance<XRGeneralSettings>();
         }
 
-        // Initialize and start the loader
-        XRGeneralSettings.Instance.Manager.InitializeLoaderSync();
-        XRGeneralSettings.Instance.Manager.StartSubsystems();
+        if(XRGeneralSettings.Instance.Manager == null){
+            yield return new WaitUntil( () => XRGeneralSettings.Instance.Manager != null);
+        }
+
+        XRGeneralSettings.Instance?.Manager?.InitializeLoaderSync();
+ 
+        if (XRGeneralSettings.Instance?.Manager?.activeLoader == null){
+            Debug.LogError("Initializing XR Failed. Check Editor or Player log for details.");
+        }
+        else {
+            XRGeneralSettings.Instance?.Manager?.StartSubsystems();
+        }
     }
+
+#endif
 }
