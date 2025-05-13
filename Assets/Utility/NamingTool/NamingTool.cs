@@ -11,7 +11,7 @@ public class NamingTool : EditorWindow
     [SerializeField]
     public List<GameObject> ins_GameObjects = new List<GameObject>();
 
-    [MenuItem("Tools/������Ʈ �̸��ٲٱ�")]
+    [MenuItem("Tools/오브젝트 이름 변경")]
     private static void Open()
     {
         NamingTool win = GetWindow<NamingTool>();
@@ -40,15 +40,15 @@ public class NamingTool : EditorWindow
         GUILayout.BeginVertical("BOX");
 
         GUILayout.Space(10);
-        GUILayout.Label("���� �� �̸�", GUILayout.Width(75));
+        GUILayout.Label("변경 할 이름", GUILayout.Width(75));
         _strName = EditorGUILayout.TextField(_strName, GUILayout.ExpandWidth(true));
-        GUILayout.Label("���� �ε���(-1�̸� �ε����� �Ⱥ���)", GUILayout.ExpandWidth(true));
+        GUILayout.Label("시작 인덱스(-1이면 인덱스를 안붙임)", GUILayout.ExpandWidth(true));
         _nCount = EditorGUILayout.IntField(_nCount, GUILayout.ExpandWidth(true));
         GUILayout.Space(10);
 
         GUILayout.EndHorizontal();
 
-        if (GUILayout.Button("����"))
+        if (GUILayout.Button("변경"))
         {
             int nIdx = _nCount;
             string strName = _strName;
@@ -65,27 +65,27 @@ public class NamingTool : EditorWindow
 
             if (ins_GameObjects.Count == 0)
             {
-                Debug.LogError("����Ʈ�� �������");
+                Debug.LogError("리스트가 비어있음");
             }
             else
             {
-                Debug.LogError("���� �Ϸ�");
+                Debug.LogError("변경 완료");
             }
         }
     }
 }
 
 [CustomEditor(typeof(NamingTool), true)]
-public class NamingToolEditor : Editor
+public class ECNamingEditor : Editor
 {
     public override void OnInspectorGUI()
     {
         var list = serializedObject.FindProperty("ins_GameObjects");
-        EditorGUILayout.PropertyField(list, new GUIContent("������Ʈ ����Ʈ"), true);
+        EditorGUILayout.PropertyField(list, new GUIContent("오브젝트 리스트"), true);
 
         serializedObject.ApplyModifiedProperties();
 
-        if (GUILayout.Button("�ʱ�ȭ"))
+        if (GUILayout.Button("초기화"))
         {
             list.arraySize = 0;
         }
