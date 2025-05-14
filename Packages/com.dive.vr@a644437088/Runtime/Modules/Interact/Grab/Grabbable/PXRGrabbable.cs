@@ -100,37 +100,37 @@ namespace Dive.VRModule
         /// </summary>
         [Tooltip("오브젝트를 잡았을 때 정해진 위치로 이동하는 경우에 지정된 이동 위치(Native)")]
         [field: SerializeField, ShowIf(nameof(IsPositionOverride), true), LabelText("이동 위치 [Native]")]
-        public Vector3 OverrideLocalPosition { get; private set; } = Vector3.zero;
+        public Vector3 OverrideLocalPosition { get; set; } = Vector3.zero;
 
         /// <summary>
         /// 오브젝트를 잡았을 때 정해진 회전값으로 변경하는 경우에 지정된 변경 회전 값
         /// </summary>
         [Tooltip("오브젝트를 잡았을 때 정해진 회전값으로 변경하는 경우에 지정된 변경 회전 값 (Native)")]
         [field: SerializeField, ShowIf(nameof(IsRotationOverride), true), LabelText("회전 값 [Native]")]
-        public Vector3 OverrideLocalRotation { get; private set; } = Vector3.zero;
+        public Vector3 OverrideLocalRotation { get; set; } = Vector3.zero;
 
         [Tooltip("오브젝트를 잡았을 때 정해진 위치로 이동하는 경우에 지정된 이동 위치 (Meta)")]
         [field: SerializeField, ShowIf(nameof(IsPositionOverride), true), LabelText("이동 위치 [메타]")]
-        public Vector3 MetaOverrideLocalPosition { get; private set; } = Vector3.zero;
+        public Vector3 MetaOverrideLocalPosition { get; set; } = Vector3.zero;
 
         [Tooltip("오브젝트를 잡았을 때 정해진 회전값으로 변경하는 경우에 지정된 변경 회전 값 (Meta)")]
         [field: SerializeField, ShowIf(nameof(IsRotationOverride), true), LabelText("회전 값 [메타]")]
-        public Vector3 MetaOverrideLocalRotation { get; private set; } = Vector3.zero;
+        public Vector3 MetaOverrideLocalRotation { get; set; } = Vector3.zero;
 
         [Tooltip("오브젝트를 잡았을 때 정해진 위치로 이동하는 경우에 지정된 이동 위치 (Pico)")]
         [field: SerializeField, ShowIf(nameof(IsPositionOverride), true), LabelText("이동 위치 [피코]")]
-        public Vector3 PicoOverrideLocalPosition { get; private set; } = Vector3.zero;
+        public Vector3 PicoOverrideLocalPosition { get; set; } = Vector3.zero;
 
         [Tooltip("오브젝트를 잡았을 때 정해진 회전값으로 변경하는 경우에 지정된 변경 회전 값 (Pico)")]
         [field: SerializeField, ShowIf(nameof(IsRotationOverride), true), LabelText("회전 값 [피코]")]
-        public Vector3 PicoOverrideLocalRotation { get; private set; } = Vector3.zero;
+        public Vector3 PicoOverrideLocalRotation { get; set; } = Vector3.zero;
 
 
         /// <summary>
         /// 물건을 잡았을 때 메타 / 피코 손 모델의 포즈
         /// </summary>
         [field: SerializeField, ShowIf(nameof(IsEnableGrab), true), LabelText("손 모델의 포즈"), Space]
-        public PXRPose GrabbedPXRPose { get; private set; }
+        public PXRPose GrabbedPXRPose { get; set; }
 
         /// <summary>
         /// 물건을 잡았을 때 손 모델의 포즈

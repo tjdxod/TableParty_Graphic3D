@@ -440,6 +440,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PXRRig_Meta
       objectReference: {fileID: 0}
+    - target: {fileID: 5754410424115054798, guid: 34e66fbb6399b714fb365efd161f08a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7483696101579292306, guid: 34e66fbb6399b714fb365efd161f08a1,
         type: 3}
       propertyPath: _inputManager
@@ -455,6 +460,16 @@ PrefabInstance:
       propertyPath: _facePoseBehavior
       value: 
       objectReference: {fileID: 2471629280888322109}
+    - target: {fileID: 7483696101579292306, guid: 34e66fbb6399b714fb365efd161f08a1,
+        type: 3}
+      propertyPath: _criticalJointTypes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483696101579292306, guid: 34e66fbb6399b714fb365efd161f08a1,
+        type: 3}
+      propertyPath: _criticalJointTypes.Array.data[0]
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 8642575042595962060, guid: 34e66fbb6399b714fb365efd161f08a1,
         type: 3}
       propertyPath: m_Enabled

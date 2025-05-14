@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Dive.VRModule;
+using Oculus.Avatar2;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
@@ -10,6 +11,26 @@ public class GrabbableDataSaver : MonoBehaviour
 {
     private PXRGrabbable grabbable;
     private Renderer rend;
+
+    private GameObject newObj;
+    
+    private IEnumerator Start()
+    {
+        yield return new WaitUntil(() => FindObjectOfType<SampleAvatarEntity>().IsCreated);
+        
+        var avatar = FindObjectOfType<SampleAvatarEntity>();
+        
+        yield return new WaitUntil(() => avatar.GetSkeletonTransform(CAPI.ovrAvatar2JointType.RightHandWrist) != null);
+        
+        var wrist = avatar.GetSkeletonTransform(CAPI.ovrAvatar2JointType.RightHandWrist);
+        
+        newObj = new GameObject("Grabber");
+        newObj.transform.SetParent(wrist);
+        
+        newObj.transform.localPosition = new Vector3(-0.08203185f, -0.04675849f, -0.008599499f);
+        newObj.transform.localRotation = Quaternion.Euler(2.754f, -102.733f, 80.009f);
+        newObj.transform.localScale = Vector3.one;
+    }
     
     [Button("오브젝트 생성")]
     public void CreateRenderObject(GameObject renderObject)
@@ -33,7 +54,7 @@ public class GrabbableDataSaver : MonoBehaviour
         var newObject = Instantiate(renderObject, transform);
         newObject.transform.localPosition = Vector3.zero;
         newObject.transform.localRotation = Quaternion.identity;
-
+        
         var meshCollider = newObject.AddComponent<MeshCollider>();
         var meshFilter = newObject.GetComponent<MeshFilter>();
         newObject.AddComponent<PXRGrabbableChild>();
@@ -42,25 +63,99 @@ public class GrabbableDataSaver : MonoBehaviour
         {
             meshCollider.sharedMesh = meshFilter.sharedMesh;
         }
+        else
+        {
+            Debug.LogError("MeshFilter가 null입니다.");
+            return;
+        }
+    }
+
+    [Button("차일드 화")]
+    public void ChildNewObj()
+    {
+        if (newObj == null)
+        {
+            Debug.LogError("newObj가 null입니다.");
+            return;
+        }
+        
+        // 하이어라키에서 오브젝트 선택
+        transform.SetParent(newObj.transform);
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
+        transform.localScale = Vector3.one;
+    }
+
+    [Button("차일드화 해제")]
+    public void UnchildNewObj() 
+    {
+        if (newObj == null)
+        {
+            Debug.LogError("newObj가 null입니다.");
+            return;
+        }
+        
+        // 하이어라키에서 오브젝트 선택
+        transform.SetParent(null);
+    }
+    
+    [Button("포즈 적용")]
+    public void SetPose(PXRPose pose)
+    {
+        var customPoses = FindObjectsOfType<PXRMetaCustomHand>(true);
+        var rightPoses = customPoses.Find(x => x.HandSide == HandSide.Right);
+        
+        if (rightPoses == null)
+        {
+            Debug.LogError("RightHandPose가 null입니다.");
+            return;
+        }
+        
+        if (pose == null)
+        {
+            Debug.LogError("Pose가 null입니다.");
+            return;
+        }
+
+        rightPoses.SetPose(pose);
+
+        grabbable = GetComponent<PXRGrabbable>();
+        
+        grabbable.GrabbedPXRPose = pose;
     }
     
     [Button("오브젝트 제거")]
     public void DeleteRenderObject()
     {
-        var child = transform.GetChild(0);
-
-        var childCount = child.childCount;
+        var childCount = transform.childCount;
 
         if (childCount > 0)
         {
             for (int i = 0; i < childCount; i++)
             {
-                DestroyImmediate(child.GetChild(i).gameObject);
+                DestroyImmediate(transform.GetChild(i).gameObject);
             }
         }
     }
     
-    [Button("데이터 저장")]
+    
+    [Button("데이터 적용")]
+    public void ApplyGrabbableData()
+    {
+        grabbable = GetComponent<PXRGrabbable>();
+
+        if (grabbable == null)
+        {
+            Debug.LogError("PXRGrabbable이 null입니다.");
+            return;
+        }
+        
+        grabbable.OverrideLocalPosition = transform.localPosition;
+        grabbable.OverrideLocalRotation = transform.localEulerAngles;
+    }
+    
+    
+    [Button("데이터 파일로 저장")]
     public void SaveGrabbableData()
     {
         Debug.Log("Grabbable data saved.");
