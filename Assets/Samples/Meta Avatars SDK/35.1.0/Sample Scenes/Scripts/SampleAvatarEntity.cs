@@ -28,7 +28,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-
+using Newtonsoft.Json;
 using Oculus.Avatar2;
 #if USING_XR_SDK
 using Oculus.Platform;
@@ -101,7 +101,12 @@ public class SampleAvatarEntity : OvrAvatarEntity
     [Range(4.0f, 320.0f)]
     private float _changeCheckInterval = 8.0f;
 
-
+    [SerializeField]
+    private bool isAPose = false;
+    
+    [SerializeField]
+    private bool isSitPose = false;
+    
     protected bool HasLocalAvatarConfigured => _assets.Count > 0;
 
     private Stopwatch _loadTime = new Stopwatch();
@@ -135,6 +140,24 @@ public class SampleAvatarEntity : OvrAvatarEntity
                 LoadLocalAvatar();
             }
         }
+        
+        OnSkeletonLoadedEvent.AddListener((OvrAvatarEntity entity) =>
+        {
+            if (isAPose)
+            {
+                var aPoseText = Resources.Load<TextAsset>("Stand_Medium").text;
+                var stream = JsonConvert.DeserializeObject<byte[]>(aPoseText);
+                
+                entity.ApplyStreamData(stream);
+            }
+            else if (isSitPose)
+            {
+                var sitPoseText = Resources.Load<TextAsset>("Sit_Medium").text;
+                var stream = JsonConvert.DeserializeObject<byte[]>(sitPoseText);
+                
+                entity.ApplyStreamData(stream);
+            }
+        });
     }
 
     protected virtual void SetDefaultAssets()
