@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4160196252192817256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6495743717706978055}
+  - component: {fileID: 3123376826420014511}
+  - component: {fileID: 2883364151755981831}
+  m_Layer: 0
+  m_Name: Grabbable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6495743717706978055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160196252192817256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3123376826420014511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160196252192817256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd59d7b8dced89a41acfc0d9c2df5824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canInteract: 1
+  transferState: 2
+  luxOutline: {fileID: 0}
+  onlyOutlineColor: 0
+  <UseReturnToOrigin>k__BackingField: 0
+  <IsCalculateTimeFromNoMovement>k__BackingField: 0
+  <ReturnToOriginTime>k__BackingField: 0.5
+  <IsReturnToOriginY>k__BackingField: 0
+  <ReturnToOriginYRange>k__BackingField: {x: -0.5, y: 50}
+  <EnableGrabState>k__BackingField: 1
+  <OverrideParentState>k__BackingField: 2
+  parentOverride: {fileID: 0}
+  <AttachGrabbableState>k__BackingField: 2
+  <OverrideTransformState>k__BackingField: 3
+  <OverrideLocalPosition>k__BackingField: {x: 0, y: 0, z: 0}
+  <OverrideLocalRotation>k__BackingField: {x: 0, y: 0, z: 0}
+  <MetaOverrideLocalPosition>k__BackingField: {x: 0, y: 0, z: 0}
+  <MetaOverrideLocalRotation>k__BackingField: {x: 0, y: 0, z: 0}
+  <PicoOverrideLocalPosition>k__BackingField: {x: 0, y: 0, z: 0}
+  <PicoOverrideLocalRotation>k__BackingField: {x: 0, y: 0, z: 0}
+  <GrabbedPXRPose>k__BackingField: {fileID: 0}
+  <GrabbedHandPose>k__BackingField: {fileID: 0}
+  <UseFakeHand>k__BackingField: 0
+  <FakeHand>k__BackingField: {fileID: 0}
+  throwForce: 1
+  isActiveAttachHandCollider: 0
+  isRigidContinuous: 0
+  <ExperimentFeature>k__BackingField: 0
+  <CanMoving>k__BackingField: 0
+  <CanPCMoving>k__BackingField: 0
+  <CanRotating>k__BackingField: 0
+--- !u!114 &2883364151755981831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160196252192817256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c7e6d0922f99142b0a92231c47e05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

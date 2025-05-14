@@ -20,24 +20,23 @@ public class GrabbableDataSaver : MonoBehaviour
             return;
         }        
         
-        var child = transform.GetChild(0);
-
-        var childCount = child.childCount;
+        var childCount = transform.childCount;
 
         if (childCount > 0)
         {
             for (int i = 0; i < childCount; i++)
             {
-                DestroyImmediate(child.GetChild(i).gameObject);
+                DestroyImmediate(transform.GetChild(i).gameObject);
             }
         }
         
-        var newObject = Instantiate(renderObject, child);
+        var newObject = Instantiate(renderObject, transform);
         newObject.transform.localPosition = Vector3.zero;
         newObject.transform.localRotation = Quaternion.identity;
 
         var meshCollider = newObject.AddComponent<MeshCollider>();
         var meshFilter = newObject.GetComponent<MeshFilter>();
+        newObject.AddComponent<PXRGrabbableChild>();
         
         if (meshFilter != null)
         {
