@@ -103,9 +103,9 @@ public class GrabbableDataSaver : MonoBehaviour
     public void SetPose(PXRPose pose)
     {
         var customPoses = FindObjectsOfType<PXRMetaCustomHand>(true);
-        var rightPoses = customPoses.Find(x => x.HandSide == HandSide.Right);
+        var rightPose = customPoses.Find(x => x.HandSide == HandSide.Right);
         
-        if (rightPoses == null)
+        if (rightPose == null)
         {
             Debug.LogError("RightHandPose가 null입니다.");
             return;
@@ -116,8 +116,19 @@ public class GrabbableDataSaver : MonoBehaviour
             Debug.LogError("Pose가 null입니다.");
             return;
         }
+        
+        var parent = rightPose.transform.parent;
 
-        rightPoses.SetPose(pose);
+        if (parent.name == "MyAvatar")
+        {
+            rightPose.transform.SetParent(parent.GetChild(2));
+            rightPose.transform.localPosition = Vector3.zero;
+            rightPose.transform.localRotation = Quaternion.Euler(0, 180, 0);
+            rightPose.testPose = pose;
+            rightPose.gameObject.SetActive(true);
+        }
+        
+        rightPose.SetPose(pose);
 
         grabbable = GetComponent<PXRGrabbable>();
         

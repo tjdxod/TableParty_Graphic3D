@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Dive.Avatar.Meta;
 using Dive.VRModule;
 using Oculus.Avatar2;
+using UnityEditor;
 using UnityEngine;
 
 public class PXRMetaCustomHand : PXRPoser
@@ -10,13 +11,18 @@ public class PXRMetaCustomHand : PXRPoser
     [SerializeField]
     private OvrAvatarCustomHandPose customHandPose;
 
-    [SerializeField]
-    private PXRPose testPose;
+    public PXRPose testPose;
     
     [Sirenix.OdinInspector.Button]
     private void Test()
     {
         SetPose(testPose);
+        
+        customHandPose.setHandPose = false;
+        customHandPose.setWristOffset = false;
+        
+        customHandPose.setHandPose = true;
+        customHandPose.setWristOffset = false;
     }
 
     protected override void Awake()
@@ -54,5 +60,24 @@ public class PXRMetaCustomHand : PXRPoser
     public override void SetPreviousPose(PXRPose pose)
     {
         
+    }
+
+    [Sirenix.OdinInspector.Button("저장(덮어쓰기)")]
+    public void SavePose()
+    {
+        for (var i = 0; i < 3; i++)
+        {
+            testPose.Joints.IndexJoints[i].LocalRotation = indexJoints[i].localRotation;
+            testPose.Joints.MiddleJoints[i].LocalRotation = middleJoints[i].localRotation;
+            testPose.Joints.RingJoints[i].LocalRotation = ringJoints[i].localRotation;
+        }
+        for (var i = 0; i < 4; i++)
+        {
+            testPose.Joints.ThumbJoints[i].LocalRotation = thumbJoints[i].localRotation;
+            testPose.Joints.PinkyJoints[i].LocalRotation = pinkyJoints[i].localRotation;
+        }
+        
+        EditorUtility.SetDirty(testPose);
+        AssetDatabase.SaveAssets();
     }
 }
