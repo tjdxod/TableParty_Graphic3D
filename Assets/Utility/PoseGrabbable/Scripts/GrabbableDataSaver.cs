@@ -102,7 +102,8 @@ public class GrabbableDataSaver : MonoBehaviour
     [Button("포즈 적용")]
     public void SetPose(PXRPose pose)
     {
-        var customPoses = FindObjectsOfType<PXRMetaCustomHand>(true);
+        var avatar = FindObjectOfType<SampleAvatarEntity>();
+        var customPoses = avatar.GetComponentsInChildren<PXRMetaCustomHand>(true);
         var rightPose = customPoses.Find(x => x.HandSide == HandSide.Right);
         
         if (rightPose == null)
