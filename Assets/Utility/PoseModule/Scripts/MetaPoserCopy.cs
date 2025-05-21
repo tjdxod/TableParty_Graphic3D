@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Dive.VRModule;
 using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -116,5 +118,61 @@ public class MetaPoserCopy : MonoBehaviour
             currentPose.Joints.ThumbJoints[i] = new PXRFingerJoint(ThumbJoints[i]);
             currentPose.Joints.PinkyJoints[i] = new PXRFingerJoint(PinkyJoints[i]);
         }
+    }
+    
+    [PropertySpace(50)]
+    [Button("현재 포즈를 메쉬로 변환")]
+    public void ConvertSkinnedMeshToMesh()
+    {
+        if (currentPose == null)
+            return;
+        
+        Mesh mesh = null;
+        SkinnedMeshRenderer skinned = GetComponentInChildren<SkinnedMeshRenderer>();
+        if (skinned != null)
+        {
+            mesh = new Mesh();
+            skinned.BakeMesh(mesh);
+        }
+        else
+        {
+            Debug.LogError("No SkinnedMeshRenderer found on this GameObject.");
+            return;
+        }
+
+        GameObject obj = new GameObject("BakedMesh");
+        MeshFilter meshFilter = obj.AddComponent<MeshFilter>();
+        meshFilter.mesh = mesh;
+        MeshRenderer meshRenderer = obj.AddComponent<MeshRenderer>();
+        meshRenderer.materials = skinned.sharedMaterials;
+
+        obj.transform.position = skinned.transform.position;
+        obj.transform.rotation = skinned.transform.rotation;
+
+        var meshPath = "Assets/Utility/PoseModule/SavedData/Meshes";
+        
+        if (Directory.Exists(meshPath) == false)
+        {
+            Directory.CreateDirectory(meshPath);
+        }
+
+        // save mesh
+        string savedMeshPath = Path.Combine(meshPath, $"{currentPose.PoseName}.asset");
+        AssetDatabase.CreateAsset(mesh, savedMeshPath);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+
+        var prefabPath = "Assets/Utility/PoseModule/SavedData/Prefabs";
+        
+        if (Directory.Exists(prefabPath) == false)
+        {
+            Directory.CreateDirectory(prefabPath);
+        }
+        
+        // save prefab
+        string savedPrefabPath = Path.Combine(prefabPath, $"{currentPose.PoseName}.prefab");
+        PrefabUtility.SaveAsPrefabAsset(obj, savedPrefabPath);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
     }
 }

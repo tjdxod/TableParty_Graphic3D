@@ -215,7 +215,7 @@ public class GrabbableDataSaver : MonoBehaviour
         AssetDatabase.Refresh();
     }
     
-    [BoxGroup("데이터 확인"), Button("그래버블 데이터로 위치 적용")]
+    [BoxGroup("데이터 확인"), Button("그래버블 데이터로 값 적용")]
     public void SetGrabbableData(GrabbableData grabbableData)
     {
         if (grabbableData == null)
@@ -245,7 +245,7 @@ public class GrabbableDataSaver : MonoBehaviour
         grabbable.OverrideLocalRotation = grabbableData.nativeRotation;
     }
 
-    [BoxGroup("데이터 확인"), Button("그래버블 데이터 수치 리셋")]
+    [BoxGroup("데이터 확인"), Button("적용한 그래버블 데이터 값 리셋")]
     public void ResetGrabbableData()
     {
         grabbable = GetComponent<PXRGrabbable>();
