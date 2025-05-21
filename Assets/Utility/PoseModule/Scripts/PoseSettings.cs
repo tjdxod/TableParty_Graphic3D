@@ -303,9 +303,9 @@ public class AutoHandEditor : OdinEditorWindow
 
 public class HandTrackingEditor : OdinMenuEditorWindow
 {
-    public static string DefaultPosePath = @"Assets/Utility/PoseModule/SavedData/Poses";
-    public static string DefaultMeshPath = @"Assets/Utility/PoseModule/SavedData/Meshes";
-    public static string DefaultPrefabPath = @"Assets/Utility/PoseModule/SavedData/Prefabs";
+    public static string DefaultPosePath = @"Assets/11.Data/HandPose/Default/Pose";
+    public static string DefaultMeshPath = @"Assets/11.Data/HandPose/Default/Mesh";
+    public static string DefaultPrefabPath = @"Assets/11.Data/HandPose/Default/Prefabs";
 
     public static string LastPosePath = DefaultPosePath;
     public static string LastMeshPath = DefaultMeshPath;
