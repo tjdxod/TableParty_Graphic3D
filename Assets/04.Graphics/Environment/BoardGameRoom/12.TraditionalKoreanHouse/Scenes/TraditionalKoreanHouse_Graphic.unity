@@ -988,6 +988,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4593990933783495542, guid: 51928b9cb1c88ea43a7bf492eeb70a76,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1492,6 +1497,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 23d7bb2e13b848f469c3730ac6ba9ace,
         type: 3}
       propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 23d7bb2e13b848f469c3730ac6ba9ace,
+        type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 23d7bb2e13b848f469c3730ac6ba9ace,
@@ -2066,6 +2076,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 0b73e325deaa0a3438dcbef2e9b48ab8,
         type: 3}
       propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0b73e325deaa0a3438dcbef2e9b48ab8,
+        type: 3}
+      propertyPath: m_DynamicOccludee
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0b73e325deaa0a3438dcbef2e9b48ab8,
@@ -4083,6 +4098,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c2b44226038a6d04399dc224fc7bb066,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2b44226038a6d04399dc224fc7bb066,
         type: 3}
       propertyPath: m_Name
@@ -5247,6 +5267,11 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b3d665035ff8e3b4b8d22479ed6635bb,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b3d665035ff8e3b4b8d22479ed6635bb,
         type: 3}
       propertyPath: m_Name
@@ -5267,6 +5292,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1257166339}
   - {fileID: 156640206}
   - {fileID: 1065063504}
+  - {fileID: 1257166339}
