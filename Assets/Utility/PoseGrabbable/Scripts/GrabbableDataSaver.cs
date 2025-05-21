@@ -32,7 +32,7 @@ public class GrabbableDataSaver : MonoBehaviour
         newObj.transform.localScale = Vector3.one;
     }
     
-    [Button("오브젝트 생성")]
+    [BoxGroup("데이터 저장"), Button("오브젝트 생성")]
     public void CreateRenderObject(GameObject renderObject)
     {
         if (renderObject == null)
@@ -70,7 +70,7 @@ public class GrabbableDataSaver : MonoBehaviour
         }
     }
 
-    [Button("차일드 화")]
+    [BoxGroup("데이터 저장"), Button("차일드 화")]
     public void ChildNewObj()
     {
         if (newObj == null)
@@ -86,7 +86,7 @@ public class GrabbableDataSaver : MonoBehaviour
         transform.localScale = Vector3.one;
     }
 
-    [Button("차일드화 해제")]
+    [BoxGroup("데이터 저장"), Button("차일드화 해제")]
     public void UnchildNewObj() 
     {
         if (newObj == null)
@@ -99,7 +99,7 @@ public class GrabbableDataSaver : MonoBehaviour
         transform.SetParent(null);
     }
     
-    [Button("포즈 적용")]
+    [BoxGroup("데이터 저장"), Button("포즈 적용")]
     public void SetPose(PXRPose pose)
     {
         var avatar = FindObjectOfType<SampleAvatarEntity>();
@@ -136,7 +136,7 @@ public class GrabbableDataSaver : MonoBehaviour
         grabbable.GrabbedPXRPose = pose;
     }
     
-    [Button("오브젝트 제거")]
+    [BoxGroup("데이터 저장"), Button("오브젝트 제거")]
     public void DeleteRenderObject()
     {
         var childCount = transform.childCount;
@@ -151,7 +151,7 @@ public class GrabbableDataSaver : MonoBehaviour
     }
     
     
-    [Button("데이터 적용")]
+    [BoxGroup("데이터 저장"), Button("데이터 적용")]
     public void ApplyGrabbableData()
     {
         grabbable = GetComponent<PXRGrabbable>();
@@ -167,7 +167,7 @@ public class GrabbableDataSaver : MonoBehaviour
     }
     
     
-    [Button("데이터 파일로 저장")]
+    [BoxGroup("데이터 저장"), Button("데이터 파일로 저장")]
     public void SaveGrabbableData()
     {
         Debug.Log("Grabbable data saved.");
@@ -213,5 +213,51 @@ public class GrabbableDataSaver : MonoBehaviour
         AssetDatabase.CreateAsset(grabbableData, path);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
+    }
+    
+    [BoxGroup("데이터 확인"), Button("그래버블 데이터로 위치 적용")]
+    public void SetGrabbableData(GrabbableData grabbableData)
+    {
+        if (grabbableData == null)
+        {
+            Debug.LogError("GrabbableData가 null입니다.");
+            return;
+        }
+        
+        grabbable = GetComponent<PXRGrabbable>();
+        
+        if (grabbable == null)
+        {
+            Debug.LogError("PXRGrabbable이 null입니다.");
+            return;
+        }
+        
+        var pose = grabbableData.Pose;
+        if (pose == null)
+        {
+            Debug.LogError("Pose가 null입니다.");
+            return;
+        }
+        
+        grabbable.GrabbedPXRPose = pose;
+        
+        grabbable.OverrideLocalPosition = grabbableData.nativePosition;
+        grabbable.OverrideLocalRotation = grabbableData.nativeRotation;
+    }
+
+    [BoxGroup("데이터 확인"), Button("그래버블 데이터 수치 리셋")]
+    public void ResetGrabbableData()
+    {
+        grabbable = GetComponent<PXRGrabbable>();
+        
+        if (grabbable == null)
+        {
+            Debug.LogError("PXRGrabbable이 null입니다.");
+            return;
+        }
+        
+        grabbable.GrabbedPXRPose = null;
+        grabbable.OverrideLocalPosition = Vector3.zero;
+        grabbable.OverrideLocalRotation = Vector3.zero;
     }
 }
