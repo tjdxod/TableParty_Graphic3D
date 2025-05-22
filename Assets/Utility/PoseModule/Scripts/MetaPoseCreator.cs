@@ -175,6 +175,12 @@ public class MetaPoseCreator : MonoBehaviour
         obj.transform.position = skinnedMeshRenderer.transform.position;
         obj.transform.rotation = skinnedMeshRenderer.transform.rotation;
         
+        var grabber = new GameObject("Grabber");
+        grabber.transform.SetParent(obj.transform);
+
+        grabber.transform.localPosition = new Vector3(-0.082031f, -0.046758f, -0.008599f);
+        grabber.transform.localRotation = Quaternion.Euler(2.754f, -102.733f, 80.009f);
+        
         if(Directory.Exists(meshPath) == false)
         {
             Directory.CreateDirectory(meshPath);
